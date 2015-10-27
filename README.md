@@ -1,21 +1,15 @@
 docker-cakephp
 ======================
 
-Out-of-the-box CakePHP docker image
-
-
 Usage
 -----
+To create the image `62William/cakephp`, execute the following command on the docker-cakephp folder:
 
-You can edit the Dockerfile to add your own Github URL
-
-To create the image `stefanvangastel/cakephp`, execute the following command on the docker-cakephp folder:
-
-	docker build -t stefanvangastel/cakephp .
+	docker build -t 62William/cakephp .
 
 You can now push your new image to the registry:
 
-	docker push stefanvangastel/cakephp
+	docker push 62William/cakephp
 
 
 Running your CakePHP docker image
@@ -23,7 +17,7 @@ Running your CakePHP docker image
 
 Start your image:
 
-	docker run -d -p 80:80 stefanvangastel/cakephp
+	docker run -d -p 80:80 62William/cakephp
 
 Test your deployment:
 

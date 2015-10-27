@@ -1,8 +1,8 @@
 FROM tutum/lamp:latest
-MAINTAINER Stefan van Gastel <stefanvangastel@gmail.com>
+MAINTAINER Matt Kaufman <matt@62william.com>
 
 # Download latest version of CakePHP into /app
-RUN rm -fr /app && git clone -b 2.6.3 https://github.com/cakephp/cakephp /app
+RUN rm -fr /app && git clone -b 2.8 https://github.com/cakephp/cakephp /app
 
 # Configure Wordpress to connect to local DB
 ADD database.php /app/app/Config/database.php
